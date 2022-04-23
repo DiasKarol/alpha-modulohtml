@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Tags</title>
+    </head>
+    <body>
+        <h1>html e suas tags</h1>
+        <p>Para desenvolver um documento html, basicamente precisamos de um editor de texto, como o Bloco de Notas, Visual Studio Code, JsFiddle, e muitos outros. Em seguida, precisamos saber que o documento deve ser salvo com a extensão .html, dessa forma, conseguimos abrir ele no navegador. Outra coisa importante a se saber, são as tags.</p>
+        <br>
+        
+        <ol>
+            <li>
+                <h3>Tags importantes</h3>
+                <h4>Estas são as tags mais importantes para que os browsers façam a interpretação correta do documento:</h4>
+                <ul>
+                    <li>
+                        <p><b>&lt;html&gt; &lt;/html&gt;</b>: Esta tag é elemento basica da estruta a ser montada. Desta forma, Ela contera todas as tags que serão utilizadas, desta forma, ela deve estar no inicio e no fim do documento.</p>
+                    </li>
+                    <li>
+                        <p><b>&lt;head&gt; &lt;/head&gt;</b>: Utilizada para delimitar o cabeçalho da página (utilizando-a no inicio e no fim das informações que serão destinadas a área em questão), Nem tudo que contem dentro dessa tag fica visível para o usuário final como, por exemplo, as folhas de estilo.</p>
+                    </li> 
+                    <li>
+                        <p><b>&lt;meta charset=“utf-8” /&gt;</b>: O "meta charset" informa ao browser qual é o conjunto de caracters utilizados naquele documento. Já o "UTF-8" contém todos os caracteres dos padrões Unicode e ASCII, sendo, portanto, o mais utilizado em páginas web</p>
+                    </li>
+                    <li>
+                        <p><b>&lt;title&gt; &lt;/title&gt;</b>: Define o nome da página. Aquele nome que fica la na aba/janela do navegador.</p>
+                        <p>Exemplo: &lt;title&gt;Título da Página&lt;/title&gt;</p>
+                    </li>
+                    <li>
+                        <p><b>&lt;body&gt; &lt;/body&gt;</b>: É todo o conteudo visivel na página, tudo o que fica abaixo da aba/janela de navegação. Esta tag delimita o espaço e deve ter uma abertura e um fechamento, englobando as demais tags utilizadas no corpo do documento.</p>
+                    </li>
+                </ul>
+            </li>
+            <br>
+            
+            <li>
+                <h3>Títulos</h3>
+                <p>Títulos são geralment utilizados para identificar a pagina, artigos e/ou seçoes. Dessa forma, no htmal temos 6 niveis para realizar esta identificação e elas são representados pelas tags <b>&lt;h1&gt; &lt;/h1&gt;</b>, <b>&lt;h2&gt; &lt;/h2&gt;</b>, <b>&lt;h3&gt; &lt;/h3&gt;</b>, <b>&lt;h4&gt; &lt;/h4&gt;</b>, <b>&lt;h5&gt; &lt;/h5&gt;</b> e <b>&lt;h6&gt; &lt;/h6&gt;</b>. Quanto menor o número, maior será a sua relevância.</p>
+                <p>Para utilizar uma dessas tags, basta abrir a tag, acrescentar o conteúdo e fechar a tag.</p>
+            </li>
+            <br>
+
+            <li>
+                <h3>Paragrafos/Textos</h3>
+                <p> Para incluir textos ao documento, a tag mais utilizadas é a tag <b>&lt;p&gt; &lt;/p&gt;</b>, neste caso, envolvemos o texto pela tag. É importante resoltar que esta tag se comporta como paragrafo, ou seja, cada paragrafo do documento deve ser envolto por uma tag. <b>&lt;p&gt; &lt;/p&gt;</b></p>
+                <p>Exemplo:</p>
+                <p>&lt;p&gt; Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, corporis in rerum earum facere dicta id numquam, officia et, accusantium voluptates? Illum sequi maiores quam, impedit atque iure nulla necessitatibus. &lt;/p&gt;</p>
+                <p>&lt;p&gt; Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempora obcaecati nulla enim numquam dolorum? Facilis unde, pariatur, excepturi cupiditate optio eius corrupti ipsam est eveniet quibusdam velit corporis, dolorem adipisci. &lt;/p&gt;</p>
+            </li>
+            <br>
+
+            <li>
+                <h3>Quebra de linha</h3>
+                <p>A tag <b>&lt;br /&gt;</b> é utilizada para quebra de linha. Muito utilizada quando se é necessario realizar uma significante divisão de linhas.</p>
+                <p>Como, por exemplo, um poema. onde utilizariamos duas tags "p" e entre elas uma tag "br" para distanciar os paragrafos do poema.</p>
+            </li>
+            <br>
+
+            <li>
+                <h3>Link</h3>
+                <p>Para atribuir um link ao documento, pasta utilizar a tag <b>&lt;a&gt; &lt;/a&gt;</b> junto do atributo href="endereçode.acesso". pode user utilizado para links externos e internos, basta por o endereço correto e completo. Entre a abertura e o fechamento da tag, adicione o texto que servira como link.</p>
+                <p>Esta tag também pode ser utilizada para acessar um elemento na mesma página, basta utilizar o "id" no elemento a ser acessado e no "href" utilizamos "#nomedaid".</p>
+                <p>Exemplo: &lt;a href="endereçode.acesso"&gt; texto de acesso &lt;/a&gt;</p>
+            </li>
+            <br>
+
+            <li>
+                <h3>Imagem</h3>
+                <p>Caso queira adicionar uma imagem ao documento html, utilize a tag <b>&lt;img /&gt;</b> que recebe o endereço da imagem por meio do atributo src="imagem.png"</p>
+                <p>outro atributo utilizado é o alt="texto alternativo" que irá descrever a imagem caso haja algum problema e o browser não consiga carregar a mesma.</p>
+                <p>também utilizamor o atributo title="mensagem" que irá mostrar o texto atribuído a ela, no momento em que o usuario passar o mouse por cima da imagem.</p>
+                <p>Exemplo: <b>&lt;img src="imagem.png" alt="texto alternativo" title="mensagem" /&gt;</b></p>
+            </li>
+            <br>
+
+            <li>
+                <h3>Listas</h3>
+                <p>Listas são elementos chaves quando precisamos organizar ou ordenar um itens e textos. No html, temos a ocpção de utilizar listas ordenadas(utilizando a tag <b>&lt;ol&gt; &lt;/ol&gt;</b>) e não ordenadas (utilizando a tag <b>&lt;ul&gt; &lt;/ul&gt;</b>).</p>
+                <p>As tags informadas a cima, são utilizadas junto a tag <b>&lt;li&gt; &lt;/li&gt;</b> que significa Item da Lista, ou seja, dentro de uma tag (ol ou ul) utilizamos uma <b>&lt;li&gt; &lt;/li&gt;</b> para destacar com as marcações correspondentes da lista, os itens informados.</p>
+                <p>Exemplo:</p>
+                <p> &lt;ul&gt</p>
+                <p><b>&lt;li&gt; "texto" &lt;/li&gt;</b></p>
+                <p><b>&lt;li&gt; "texto" &lt;/li&gt;</b></p>
+                <p><b>&lt;li&gt; "texto" &lt;/li&gt;</b></p>
+                <p> &lt;/ul&gt;</p>
+            </li>
+            <br>
+
+        </ol>    
+
+    </body>
+</html>
