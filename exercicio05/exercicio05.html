@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <header>
+        <h1>VetMaggie</h1>
+        <h2>Bem-vindos ao hopital veterinario VetMaggie</h2>
+    </header>
+    <main>
+        <form action="/regitro" method="post">
+            <fieldset>
+                <legend>Dados pessoais</legend>
+
+                <section>
+                    <label for="name">Nome:</label>
+                    <input type="text" id="name" style="width: 50%;" required maxlength="25" tabindex="1">
+                    
+                    <label for="nascimento">Data de nascimento:</label>
+                    <input type="date" id="nascimento" required tabindex="3">
+
+                    <label for="cpf">CPF:</label>
+                    <input type="text" id="cpf" required placeholder="000.000.000-00" tabindex="4">
+                </section>
+                <br />
+                <section>
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" style="width: 50%;" required tabindex="5">
+
+                    <label for="formacao">Escolaridade:</label>
+                    <select name="formacao" id="formacao" required tabindex="6">
+                        <option value="">Selecione</option>
+                        <option value="2i">Segundo grau incompleto</option>
+                        <option value="2c">Segundo grau completo</option>
+                        <option value="tc">Curso técnico</option>
+                        <option value="si">Superior incompleto</option>
+                        <option value="sc">Superior completo</option>
+                    </select>
+                </section>
+            </fieldset>
+            <br />
+
+            <fieldset>
+                <legend>Endereço</legend>
+
+                <section>
+                    <label for="rua">Rua:</label>
+                    <input type="text" id="rua" style="width: 30%;" required tabindex="7">
+                    <label for="numero">Nº:</label>
+                    <input type="number" id="numero" style="width: 4%;" required tabindex="8">
+                    <label for="complemento">Complemento:</label>
+                    <input type="text" id="complemento" required tabindex="9">
+                </section>
+                <br />
+
+                <section>
+                    <label for="bairro">Bairro:</label>
+                    <input type="text" id="bairro" required tabindex="10">
+
+                    <label for="cidade">Cidade:</label>
+                    <input type="text" id="cidade" required tabindex="11">
+
+                    <label for="uf">&nbsp</label>
+                    <select name="uf" tabindex="12" required>
+                        <option value="">UF</option>
+                        <option value="AC">AC</option>
+                        <option value="AL">AL</option>
+                        <option value="AP">AP</option>
+                        <option value="AM">AM</option>
+                        <option value="BA">BA</option>
+                        <option value="CE">CE</option>
+                        <option value="DF">DF</option>
+                        <option value="ES">ES</option>
+                        <option value="GO">GO</option>
+                        <option value="MA">MA</option>
+                        <option value="MT">MT</option>
+                        <option value="MS">MS</option>
+                        <option value="MG">MG</option>
+                        <option value="PA">PA</option>
+                        <option value="PB">PB</option>
+                        <option value="PR">PR</option>
+                        <option value="PE">PE</option>
+                        <option value="PI">PI</option>
+                        <option value="RJ">RJ</option>
+                        <option value="RN">RN</option>
+                        <option value="RS">RS</option>
+                        <option value="RO">RO</option>
+                        <option value="RR">RR</option>
+                        <option value="SC">SC</option>
+                        <option value="SP">SP</option>
+                        <option value="SE">SE</option>
+                        <option value="TO">TO</option>
+                    </select>
+                        <label for="cep">CEP:</label>
+                        <input type="text" id="cep" tabindex="13">
+                </section>
+            </fieldset>
+            <br />
+
+            <fieldset>
+                <legend>Sobre o Pet</legend>
+                <section>
+                    <label for="dogname">Nome:</label>
+                    <input type="text" id="name" maxlength="25" required tabindex="2">
+
+                    <label for="age">Idade:</label>
+                    <input type="number" id="age" required tabindex="14">
+
+                    <label for="especie">Raça:</label>
+                    <input type="text" required tabindex="15">
+
+                    <label for="cor">cor</label>
+                    <input type="text" required tabindex="16">
+
+                    <label for="vacinas1">As vacinas estão em dia? se não, quais faltam?</label>
+                    <input type="text" required tabindex="17" style="width: 25%;">
+                </section>
+
+                <section>
+                    <p>Qual o porte do seu amigo?</p>
+                    <input type="radio" id="pq" name="porte" required tabindex="18">
+                    <label for="pq">Pequeno</label>
+                    <input type="radio" id="md" name="porte" required tabindex="19">
+                    <label for="md">médio</label>
+                    <input type="radio" id="pq" name="porte" required tabindex="20">
+                    <label for="gr">grande</label>
+                </section>
+                <br />
+
+                <section>
+                    <label for="obs">Observações:</label>
+                </section>
+                <textarea name="obs" id="obs" tabindex="21"></textarea>
+
+            </fieldset>
+            <br>
+
+            <fieldset>
+                <legend>Motivo</legend>
+                <input type="checkbox" id="consulta1" tabindex="22">
+                <label for="consulta1">Primeira Consulta</label>
+
+                <input type="checkbox" id="consulta2" tabindex="23">
+                <label for="consulta2">Consulta anual</label>
+
+                <input type="checkbox" id="vacinas2" tabindex="24">
+                <label for="vacinas2">Vacinas anuais</label>
+
+                <input type="checkbox" id="atestado" tabindex="25">
+                <label for="atestado">Atestado de saúde</label>
+
+                <input type="checkbox" id="duvidas" tabindex="26">
+                <label for="duvidas">Dúvidas</label>
+
+                <input type="checkbox" id="emergencia" tabindex="27">
+                <label for="emergencia">Emergência</label>
+
+                <input type="checkbox" id="outros" tabindex="28">
+                <label for="outros">Outros. Especifique:</label>
+                <label for="eo">&nbsp;</label>
+                <input type="text" name="eo" id="eo" tabindex="29">
+            </fieldset>
+            <br />
+
+            <button type="submit" tabindex="30">Enviar</button>
+            <button type="reset" tabindex="31">Limpar</button>
+        </form>
+    </main>
+</body>
+</html>
