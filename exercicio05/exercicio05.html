@@ -13,7 +13,7 @@
     </header>
     <main>
         <form action="/regitro" method="post">
-            <fieldset>
+            <fieldset style="width: 70%;">
                 <legend>Dados pessoais</legend>
 
                 <section>
@@ -31,20 +31,13 @@
                     <label for="email">E-mail:</label>
                     <input type="email" id="email" style="width: 50%;" required tabindex="5">
 
-                    <label for="formacao">Escolaridade:</label>
-                    <select name="formacao" id="formacao" required tabindex="6">
-                        <option value="">Selecione</option>
-                        <option value="2i">Segundo grau incompleto</option>
-                        <option value="2c">Segundo grau completo</option>
-                        <option value="tc">Curso técnico</option>
-                        <option value="si">Superior incompleto</option>
-                        <option value="sc">Superior completo</option>
-                    </select>
+                    <label for="senha">Senha:</label>
+                    <input type="password" id="senha" required tabindex="6">
                 </section>
             </fieldset>
             <br />
 
-            <fieldset>
+            <fieldset style="width: 70%;">
                 <legend>Endereço</legend>
 
                 <section>
@@ -101,32 +94,38 @@
             </fieldset>
             <br />
 
-            <fieldset>
+            <fieldset style="width: 70%;">
                 <legend>Sobre o Pet</legend>
                 <section>
                     <label for="dogname">Nome:</label>
                     <input type="text" id="name" maxlength="25" required tabindex="2">
 
                     <label for="age">Idade:</label>
-                    <input type="number" id="age" required tabindex="14">
+                    <input type="number" id="age" min="0" max="20" required style="width: 5%;" tabindex="14">
 
                     <label for="especie">Raça:</label>
                     <input type="text" required tabindex="15">
 
                     <label for="cor">cor</label>
                     <input type="text" required tabindex="16">
+                </section>
+                <br />
 
+                <section>
                     <label for="vacinas1">As vacinas estão em dia? se não, quais faltam?</label>
-                    <input type="text" required tabindex="17" style="width: 25%;">
+                    <input type="text" required tabindex="17">
+
+                    <label for="data">Quando foi a última consulta?</label>
+                    <input type="date" name="data" tabindex="18">
                 </section>
 
                 <section>
                     <p>Qual o porte do seu amigo?</p>
-                    <input type="radio" id="pq" name="porte" required tabindex="18">
+                    <input type="radio" id="pq" name="porte" required tabindex="19">
                     <label for="pq">Pequeno</label>
-                    <input type="radio" id="md" name="porte" required tabindex="19">
+                    <input type="radio" id="md" name="porte" required tabindex="20">
                     <label for="md">médio</label>
-                    <input type="radio" id="pq" name="porte" required tabindex="20">
+                    <input type="radio" id="pq" name="porte" required tabindex="21">
                     <label for="gr">grande</label>
                 </section>
                 <br />
@@ -134,41 +133,42 @@
                 <section>
                     <label for="obs">Observações:</label>
                 </section>
-                <textarea name="obs" id="obs" tabindex="21"></textarea>
+                <textarea name="obs" id="obs" tabindex="22"></textarea>
 
             </fieldset>
             <br>
 
-            <fieldset>
+            <fieldset style="width: 70%;">
                 <legend>Motivo</legend>
-                <input type="checkbox" id="consulta1" tabindex="22">
+                <input type="checkbox" id="consulta1" tabindex="23">
                 <label for="consulta1">Primeira Consulta</label>
 
-                <input type="checkbox" id="consulta2" tabindex="23">
+                <input type="checkbox" id="consulta2" tabindex="24">
                 <label for="consulta2">Consulta anual</label>
 
-                <input type="checkbox" id="vacinas2" tabindex="24">
+                <input type="checkbox" id="vacinas2" tabindex="25">
                 <label for="vacinas2">Vacinas anuais</label>
 
-                <input type="checkbox" id="atestado" tabindex="25">
+                <input type="checkbox" id="atestado" tabindex="26">
                 <label for="atestado">Atestado de saúde</label>
 
-                <input type="checkbox" id="duvidas" tabindex="26">
+                <input type="checkbox" id="duvidas" tabindex="27">
                 <label for="duvidas">Dúvidas</label>
 
-                <input type="checkbox" id="emergencia" tabindex="27">
+                <input type="checkbox" id="emergencia" tabindex="28">
                 <label for="emergencia">Emergência</label>
 
-                <input type="checkbox" id="outros" tabindex="28">
+                <input type="checkbox" id="outros" tabindex="29">
                 <label for="outros">Outros. Especifique:</label>
                 <label for="eo">&nbsp;</label>
-                <input type="text" name="eo" id="eo" tabindex="29">
+                <input type="text" name="eo" id="eo" tabindex="30">
             </fieldset>
             <br />
 
-            <button type="submit" tabindex="30">Enviar</button>
-            <button type="reset" tabindex="31">Limpar</button>
+            <button type="submit" tabindex="31">Enviar</button>
+            <button type="reset" tabindex="32">Limpar</button>
         </form>
     </main>
 </body>
 </html>
+
