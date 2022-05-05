@@ -1,0 +1,71 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.italico {
+    font-style: italic;
+}
+
+header {
+    background-color: #2B364A;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    Height: 91px;
+    color:#F7F7F7;
+    padding: 0 60px;
+}
+
+header img {
+    height: 50px;
+}
+
+header p {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-size: 28px;
+}
+
+header .hcoin {
+        font-size: 35px;
+}
+
+header p img {
+    margin-right: 30px;
+    height: 46px;
+}
+
+header div {
+    background-color: #E8E8E9E5;
+    border-radius: 6px;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+header input {
+    width: 827px;
+    height: 50px;
+    background-color: transparent;
+    border: transparent;
+}
+
+header button {
+    background-color: transparent;
+    Width: 65px;
+    Height: 48px;
+    border: transparent;
+    border-radius: 0;
+}
+
+header button img {
+    Width: 65px;
+    Height: 48px;
+}

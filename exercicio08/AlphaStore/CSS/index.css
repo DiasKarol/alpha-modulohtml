@@ -1,0 +1,96 @@
+main {
+    display: grid;
+    grid-template-columns: 317px 1fr;
+    color: #2B364A;
+    background-color: #E5E5E5;
+    min-height: calc(100vh - 91px);
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+    padding-top: 67px;
+    border-right: 1px solid #2B364A;
+}
+
+nav h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 33px;
+}
+
+nav a {
+    margin-left: 47px;
+    text-decoration: none;
+    color: #2B364A;
+    margin-bottom: 16px;
+    font-size: 22px;
+}
+
+section {
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    grid-template-rows: 69px repeat(auto-fill, 317px);
+    margin-top: 31px;
+    row-gap: 50px;
+    column-gap: 64px;
+    justify-content: center;
+}
+
+section h1 {
+    grid-column: 1 / -1;
+    text-align: center;
+    margin-bottom: 49px;
+    font-size: 64px;
+    border-bottom: 0.5px solid linear-gradient(270deg, rgba(43, 54, 74, 0) 0%, #2B364A 53.82%, rgba(43, 54, 74, 0) 100%);
+    height: 100%;
+}
+
+.card {
+    width: 249px;
+    height: 317px;
+    background: #FFFFFF;
+    box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+
+.card p{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-style: italic;
+    font-size: 18px;
+}
+
+.card p img {
+    margin-right: 17px;
+    height: 31px;
+}
+
+.card .coin {
+    font-size: 35px;
+}
+
+.card button {
+    background: #526281;
+    border: 1px solid #3A4967;
+    box-sizing: border-box;
+    border-radius: 7px;
+    width: 81px;
+    height: 33px;
+}
+
+.card button img {
+    width: 19.65px;
+    height: 18.75px;
+}
+
+.card > img {
+    height: 150px;
+}
