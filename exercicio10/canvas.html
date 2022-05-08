@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>canvas</title>
+</head>
+<body>
+    <canvas id="canva" width="500" height="500" style="border: 1px solid red;"></canvas>
+
+    <img id="florzinha" src="./florzinha.svg" alt="imagem feita em svg da personagem florzinha de as meninas super poderosas">
+
+    <script>
+        const canva = document.getElementById("canva");
+        const context = canva.getContext("2d");
+        const florzinha = document.getElementById("florzinha");
+        context.drawImage(florzinha, 50, 50);
+    </script>
+</body>
+</html>
